@@ -7,30 +7,28 @@ ISEND="FALSE"
 RESULT="OK"
 ONEPLAYERMODE="NULL"
 DRAW="0"
-FILE="save.txt"
 
 print () {
-	clear
+#	clear
 	for i in {0..2}
 	do
 		echo ${BOARD[@]:$((3*i)):3}
 	done
 }
 read_saved () {
-	ITER="0"
-	readarray -t BOARD < $FILE
-	USER=${BOARD[10]}
-	ONEPLAYERMODE=${BOARD[11]}
+	${BOARD} = sed '0q;d' save.txt
+	echo ${BOARD}
+	USER < save.txt
+	ONEPLAYERMODE <save.txt
+	iter = "0"
+	
 }
 save () {
-	touch $FILE
-	truncate -s 0 $FILE
-	for i in {0..9}
-	do
-		echo ${BOARD[$i]} >> $FILE
-	done
-	echo ${USER} >> $FILE
-	echo ${ONEPLAYERMODE} >> $FILE
+	touch save.txt
+	truncate -s 0 save.txt
+	echo ${BOARD[@]} >> save.txt
+	echo ${USER} >> save.txt
+	echo ${ONEPLAYERMODE} >> save.txt
 }
 
 move () {
@@ -136,9 +134,7 @@ done
 
 if [ $ONEPLAYERMODE = "R" ]
 then
-	if test -f "$FILE"; then
-		read_saved
-	fi
+	read_saved
 fi
 
 while [ $ISEND = "FALSE" ]
@@ -149,3 +145,8 @@ do
 		get_response "COMPUTER"
 	fi
 done
+
+
+
+
+

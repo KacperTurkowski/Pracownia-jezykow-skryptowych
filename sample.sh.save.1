@@ -18,19 +18,19 @@ print () {
 }
 read_saved () {
 	ITER="0"
-	readarray -t BOARD < $FILE
+	readarray -t BOARD < s
 	USER=${BOARD[10]}
 	ONEPLAYERMODE=${BOARD[11]}
 }
 save () {
-	touch $FILE
-	truncate -s 0 $FILE
+	touch save.txt
+	truncate -s 0 save.txt
 	for i in {0..9}
 	do
-		echo ${BOARD[$i]} >> $FILE
+		echo ${BOARD[$i]} >> save.txt
 	done
-	echo ${USER} >> $FILE
-	echo ${ONEPLAYERMODE} >> $FILE
+	echo ${USER} >> save.txt
+	echo ${ONEPLAYERMODE} >> save.txt
 }
 
 move () {
