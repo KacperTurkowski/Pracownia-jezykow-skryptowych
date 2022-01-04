@@ -1,0 +1,33 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'when open'
+  steps:
+  - intent: is_restaurant_open
+  - action: is_restaurant_open
+
+- rule: Say 'list_menu'
+  steps:
+  - intent: list_menu
+  - action: list_menu
+
+- rule: Say 'order'
+  steps:
+  - intent: order
+  - action: order
+
+- rule : Say 'time'
+  steps:
+    - intent: time
+    - action: time
