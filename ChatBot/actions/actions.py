@@ -122,6 +122,10 @@ class TimeWait(Action):
 
         a = [x['timestamp'] for x in tracker.events if x['event'] == "bot" and x['text'].startswith("You ordered:")]
 
+        if len(a) == 0 :
+            dispatcher.utter_message(text="You didn't order anything")
+            return []
+
         a = time.time() - a[-1]
         a = a/3600
         meal = tracker.get_slot("meals")

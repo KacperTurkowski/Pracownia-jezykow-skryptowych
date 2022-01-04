@@ -121,6 +121,7 @@ nlu:
   examples: |
     - How long I have to wait?
     - How long will it take?
+    - When my order will be ready?
 - lookup: hours
   examples: |
     - 0
