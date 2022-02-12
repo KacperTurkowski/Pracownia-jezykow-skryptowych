@@ -1,0 +1,14 @@
+2022/02/08 21:01:58 [alert] 1440#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:02:51 [alert] 1519#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:12:28 [alert] 4324#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:17:59 [alert] 4969#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:19:15 [alert] 5216#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:26:43 [alert] 6152#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:27:55 [alert] 6180#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:34:00 [alert] 6762#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:34:55 [alert] 6839#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:37:43 [alert] 6993#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:44:42 [alert] 7250#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:49:14 [alert] 7312#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:49:56 [alert] 7345#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
+2022/02/08 21:54:58 [alert] 7394#0: lua_code_cache is off; this will hurt performance in /home/kacper/lua2/nginx.conf.compiled:16
